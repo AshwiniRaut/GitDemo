@@ -21,6 +21,11 @@ public class Hooks extends TestBase {
 	{
 		System.out.println("THis is my new commit");
 	}
+	@Before(order=2)
+	public void testTWOSetup()
+	{
+		System.out.println("THis is my new commit from git stuff");
+	}
 	
 	@After
 	public void teardown()
