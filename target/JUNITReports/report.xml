@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.872">
+<testcase classname="Add and Remove functionality" name="Verify Add And Remove Functionality" time="7.644">
+<system-out><![CDATA[Given User is on herokuapp webpage..........................................passed
+When User clicks on Add And Remove button...................................passed
+Then User navigates to the Add And Remove webpage...........................passed
+And User clicks on add button...............................................passed
+And User clicks on Remove button............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
