@@ -16,6 +16,11 @@ public class Hooks extends TestBase {
 	{
 		TestBase.initialization();
 	}
+	@Before(order=1)
+	public void testSetup()
+	{
+		System.out.println("THis is my new commit");
+	}
 	
 	@After
 	public void teardown()
@@ -38,7 +43,7 @@ public class Hooks extends TestBase {
 			if(scenario.isFailed())
 			{
 				final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-				System.out.println("this is scenarion name:"+scenario.getName());
+				//System.out.println("this is scenarion name:"+scenario.getName());
 				scenario.attach(screenshot, "image/png", "image"); 
 			}
 			
